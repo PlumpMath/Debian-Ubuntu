@@ -40,6 +40,10 @@ cat /etc/resolv.conf
 
 Set a static IP address.
 
+```sh
+vi /etc/network/interfaces
+```
+
 ```
 auto eth0
 iface eth0 inet static
@@ -92,8 +96,9 @@ Install an up to date *CMake* version.
 
 ```sh
 wget https://cmake.org/files/v3.5/cmake-3.5.2-Linux-x86_64.sh
-sudo sh cmake-3.5.2-Linux-x86_64.sh --prefix=/opt
+yes | sudo sh cmake-3.5.2-Linux-x86_64.sh --prefix=/opt
 sudo mv /opt/cmake-3.5.2-Linux-x86_64 /opt/cmake
+# NOTE: Add /opt/cmake/bin to the PATH environment variable.
 ```
 
 
