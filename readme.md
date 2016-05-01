@@ -96,16 +96,16 @@ sudo sh cmake-3.5.2-Linux-x86_64.sh --prefix=/opt
 sudo mv /opt/cmake-3.5.2-Linux-x86_64 /opt/cmake
 ```
 
+
+## Compiler
+Install *LLVM* and *clang*.
+
 ## Debian 7.9
 There is no modern *clang* for Debian "wheezy".
 
 ```sh
 sudo apt-get install make
 ```
-
-
-## Compiler
-Install *LLVM* and *clang*.
 
 ### Debian 8.4
 Install *clang* on Debian "jessie".
