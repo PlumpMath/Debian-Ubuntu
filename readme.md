@@ -85,8 +85,8 @@ install -o qis -g qis -d /home/qis/.ssh
 Upload the configuration files.
 
 ```sh
-scp -r .vim .vimrc .zsh .zshrc .tmux.conf qis@debian:
 scp .ssh/id_rsa.pub qis@debian:.ssh/authorized_keys
+scp -r .vim .vimrc .zsh .zshrc .tmux.conf qis@debian:
 ```
 
 
